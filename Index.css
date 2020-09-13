@@ -37,14 +37,21 @@ header ul{
     align-items: center;
 }
 
-
 section,footer{
     display: flex;
     padding: 20px;
     flex-direction: row;
     background-color: black;
     color: black;
+    /*flex-wrap: wrap;*/
 }
+
+@media screen and (max-width: 1080px){
+    .Main_sections{
+        display: block;
+    }
+}
+
 footer{
     color: gray;
     background: black;
@@ -90,6 +97,13 @@ input[type="text"]{
     height: 25px;
     margin-left: 1600px;
     width: 250px;
+}
+
+@media screen and (max-width: 1240px){
+    input[type="text"]{
+        margin: auto;
+        margin-left: 0px;
+    }
 }
 
 .Main_sections{
